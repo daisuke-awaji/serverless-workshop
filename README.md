@@ -1,8 +1,8 @@
 # serverless-workshop
 
-![serverless workshop backend architecture](./score-board.png)
+![submit](./submit.png)
 
-開発者（参加者）は SQS に送信された情報を集計するシステムを構築します。
+SQS に送信された情報を集計するシステムを構築してください。
 
 # アンケート集計システム
 
@@ -24,13 +24,18 @@ SQS に投入されたデータをいち早く集計し、結果をランキン�
 | 評価項目             | ポイント                                            |
 | -------------------- | --------------------------------------------------- |
 | 集計までのスピード　 | （60-処理時間）分 × 100 ポイント                    |
-| 正確さ　             | 全て正解 5000 ポイント / 一位だけ正解 3000 ポイント |
+| 集計結果の正確さ　   | 全て正解 5000 ポイント / 一位だけ正解 3000 ポイント |
 
 # 競技用 API
 
-## benchmarkId を取得する
+競技は何度でも実行できます。１度の競技では benchmarkId を発行して benchmarkId をパラメータに与えて競技を開始します。競技が開始されると、SQS に自動的にメッセージが格納されます。SQS に格納されたメッセージを集計し、結果を集計結果 API に送信してください。
 
-GET http://endpoint/init
+## benchmarkId 取得 API
+
+以下の API を使用して benchmarkId を取得します。
+benchmarkId は１回の競技で１度だけ使用します。
+
+**GET** http://endpoint/init
 
 ```
 {
@@ -38,9 +43,9 @@ GET http://endpoint/init
 }
 ```
 
-## SQS への投稿を開始する
+## 競技開始 API
 
-POST http://endpoint/start
+**POST** http://endpoint/start/{benchmarkId}
 
 ```
 {
@@ -49,9 +54,9 @@ POST http://endpoint/start
 }
 ```
 
-## 集計結果を評価する
+## 集計結果 API
 
-POST https://endpoint/end/{benchmarkId}
+**POST** https://endpoint/end/{benchmarkId}
 
 HttpBody
 
@@ -73,3 +78,5 @@ Response
     "score": 100
 }
 ```
+
+![serverless workshop backend architecture](./score-board.png)
