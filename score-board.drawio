@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-12-05T08:35:50.274Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="lkae4CBG81mjxqSII7di" version="12.3.6" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-12-05T08:36:06.166Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="ZsNUKtUT8aYHaeL5o1vO" version="12.3.6" type="github" pages="1">
   <diagram id="oE668b1T04KdqO5-EZjN" name="Page-1">
     <mxGraphModel dx="1554" dy="1003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,8 +25,10 @@
         <mxCell id="fTH20Q57ph5YXirQgXdZ-6" value="&lt;b&gt;SQS&lt;br&gt;TeamA&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF9933;" parent="1" vertex="1">
           <mxGeometry x="1110" y="110" width="120" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="fTH20Q57ph5YXirQgXdZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="fTH20Q57ph5YXirQgXdZ-17" target="fTH20Q57ph5YXirQgXdZ-1" edge="1">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="fTH20Q57ph5YXirQgXdZ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="fTH20Q57ph5YXirQgXdZ-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="652" y="140" as="sourcePoint"/>
+          </mxGeometry>
         </mxCell>
         <mxCell id="fTH20Q57ph5YXirQgXdZ-14" value="&lt;b&gt;Developer&lt;br&gt;TeamA&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="110" width="120" height="280" as="geometry"/>
